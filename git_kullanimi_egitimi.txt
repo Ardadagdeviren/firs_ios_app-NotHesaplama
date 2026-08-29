@@ -1,0 +1,40 @@
+GitHub'a Kod Gönderme Rehberi (Git Temelleri)
+==============================================
+
+Bu rehberde az önce kodlarınızı GitHub'a nasıl gönderdiğimizin adım adım açıklamasını bulabilirsiniz. Git ve GitHub ile çalışırken bu üç temel komutu sıklıkla kullanacaksınız.
+
+1. ADIM: Değişiklikleri Hazırlama (git add)
+------------------------------------------
+Komut: 
+git add .
+
+Ne işe yarar?
+Projenizde yaptığınız değişiklikleri (yeni oluşturulan dosyalar, silinenler veya değiştirilenler) Git'in "sahneleme alanına" (staging area) ekler.
+Sonundaki nokta (.) "bulunduğum klasördeki TÜM değişiklikleri ekle" anlamına gelir. Sadece belirli bir dosyayı eklemek isterseniz "git add dosya_adi.swift" şeklinde de kullanabilirsiniz.
+
+2. ADIM: Değişiklikleri Kaydetme (git commit)
+---------------------------------------------
+Komut: 
+git commit -m "Update folder structure"
+
+Ne işe yarar?
+Hazırlanan değişiklikleri Git tarihçesine bir paket (commit) olarak kaydeder.
+'-m' parametresi, bu pakete bir not (mesaj) ekleyeceğimizi belirtir. Tırnak içindeki mesaj, o anki yaptığınız değişikliğin ne olduğunu anlatan kısa ve öz bir metin olmalıdır. Örneğin: "Giriş ekranı tasarımı eklendi" veya "Hesaplama hatası düzeltildi".
+
+3. ADIM: Değişiklikleri GitHub'a Gönderme (git push)
+----------------------------------------------------
+Komut: 
+git push
+
+Ne işe yarar?
+Bilgisayarınızda (yerel deponuzda) kaydettiğiniz değişiklik paketlerini (commit'leri), uzak sunucuya (GitHub'a) yükler. 
+Böylece kodlarınız internette yedeklenmiş olur ve takım arkadaşlarınız (varsa) bu değişiklikleri kendi bilgisayarlarına çekebilirler.
+
+Özet Akış:
+1. Kodunu yaz veya değiştir.
+2. Terminal'i aç ve proje klasörüne git.
+3. `git add .` yaz ve Enter'a bas.
+4. `git commit -m "Yaptığım değişikliğin özeti"` yaz ve Enter'a bas.
+5. `git push` yaz ve Enter'a bas.
+
+Hepsi bu kadar! Artık kodlarınız GitHub'da güvende.
